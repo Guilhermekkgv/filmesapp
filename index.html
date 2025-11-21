@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <style>
+    /* Minimal reset to ensure one-screen mobile layout */
+    html,body,#app { height:100%; margin:0; padding:0; }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+  <title>App de Filmes</title>
+  <script type="importmap">
+  {
+    "imports": {}
+  }
+  </script>
+</head>
+<body>
+  <div id="app" role="application"></div>
+
+  <template id="movie-card-template">
+    <article class="card">
+      <div class="poster" aria-hidden="true"></div>
+      <div class="meta">
+        <div class="title-row">
+          <h3 class="title"></h3>
+        </div>
+        <p class="subtitle"></p>
+      </div>
+    </article>
+  </template>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
